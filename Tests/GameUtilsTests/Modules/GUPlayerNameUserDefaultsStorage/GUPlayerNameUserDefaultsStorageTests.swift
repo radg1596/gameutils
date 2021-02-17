@@ -1,24 +1,10 @@
 import XCTest
 @testable import GameUtils
 
-final class GameUtilsTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(GameUtils().text, "Hello, World!")
-    }
-
-    static var allTests = [
-        ("testExample", testExample),
-    ]
-}
-
-
-class PlayerNameUserDefaultsStorageTests: XCTestCase {
+class GUPlayerNameUserDefaultsStorageTests: XCTestCase {
 
     // MARK: - PROPERTIES
-    private var sut: PlayerNameUserDefaultsStorage?
+    private var sut: GUPlayerNameUserDefaultsStorage?
 
     // MARK: - TEST CYCLE LIFE
     override func tearDown() {
@@ -29,7 +15,7 @@ class PlayerNameUserDefaultsStorageTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        sut = PlayerNameUserDefaultsStorage()
+        sut = GUPlayerNameUserDefaultsStorage()
     }
 
     // MARK: - TESTS

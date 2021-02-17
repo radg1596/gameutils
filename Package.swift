@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "GameUtils",
+    platforms: [
+        .iOS(.v10),
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -24,5 +27,6 @@ let package = Package(
         .testTarget(
             name: "GameUtilsTests",
             dependencies: ["GameUtils"]),
-    ]
+    ],
+    swiftLanguageVersions: [.v5, .v4, .v4_2]
 )
