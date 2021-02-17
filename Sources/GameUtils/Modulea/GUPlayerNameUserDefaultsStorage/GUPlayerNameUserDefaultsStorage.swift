@@ -1,12 +1,14 @@
+//
+//  File.swift
+//  
+//
+//  Created by Ricardo Desiderio on 16/02/21.
+//
+
 import Foundation
 
-struct GameUtils {
-    var text = "Hello, World!"
-}
-
-
 /// Used to store the user player name on the userDefaults, using the default standart.
-public class PlayerNameUserDefaultsStorage {
+public class GUPlayerNameUserDefaultsStorage {
 
     // MARK: - PROPERTIES
     /// The storage key in order to use on user defaults. Default value is: "PlayerNameUserDefaultsStorage"
