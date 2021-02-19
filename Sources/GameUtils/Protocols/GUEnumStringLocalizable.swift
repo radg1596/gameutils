@@ -13,7 +13,7 @@ public protocol GUEnumStringLocalizable {
     var localize: String { get }
 }
 
-extension GUEnumStringLocalizable where Self: RawRepresentable {
+public extension GUEnumStringLocalizable where Self: RawRepresentable {
 
     var localize: String {
         guard let rawValue: String = rawValue as? String else {
