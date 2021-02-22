@@ -12,8 +12,7 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Xcode 12
-      run: xcode build -v
-    - name: Run tests
-      run: xcode build test -v
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Build and Test
+        run: swift test
