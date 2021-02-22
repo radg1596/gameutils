@@ -15,4 +15,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
       - name: Build and Test
-        run: Testing iOS app
+        run: xcodebuild test -project Proj.xcodeproj -scheme ProjTests -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8,OS=14.4"
