@@ -5,6 +5,7 @@
 //  Created by Ricardo Desiderio on 19/02/21.
 //
 
+#if !os(macOS)
 import UIKit
 
 public class GUAnimatableButtonView: UIView {
@@ -54,3 +55,6 @@ public class GUAnimatableButtonView: UIView {
     }
 
 }
+
+#else
+#endif
