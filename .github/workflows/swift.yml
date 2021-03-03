@@ -1,3 +1,4 @@
+
 name: Swift
 
 on:
@@ -12,7 +13,8 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Build and Test
-        run: swift test Package.swift -scheme GameUtils -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 8,OS=14.4"
+    - uses: actions/checkout@v2
+    - name: Build
+      run: swift build -v
+    - name: Run tests
+      run: swift test -v
