@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  GUEnumStringLocalizable.swift
 //  
 //
 //  Created by Ricardo Desiderio on 17/02/21.
