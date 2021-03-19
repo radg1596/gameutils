@@ -7,7 +7,7 @@ let package = Package(
     name: "GameUtils",
     platforms: [
         .iOS(.v10),
-    ],
+   ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(

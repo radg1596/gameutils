@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  DoubleExtensionTests.swift
 //  
 //
 //  Created by Ricardo Desiderio on 15/03/21.
@@ -44,7 +44,7 @@ class DoubleExtensionTests: XCTestCase {
         // GIVEN
         let inputDouble: Double = 35.345043
         let formatCustom: String = "%.6f"
-        let expectedOutput: String = "35.345043"
+        let expectedOutput: String = "35.3450"
         // THEN
         sut = inputDouble
         let sut: Double = try XCTUnwrap(self.sut)
