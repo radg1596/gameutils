@@ -20,7 +20,7 @@ public class GUPlayerNameUserDefaultsStorage {
 
     // MARK: INIT
     public init() {
-        storageKey = "PlayerNameUserDefaultsStorage"
+        storageKey = "PlayerNameUserDefaultsStorageByDefault"
     }
 
     // MARK: - METHODS
