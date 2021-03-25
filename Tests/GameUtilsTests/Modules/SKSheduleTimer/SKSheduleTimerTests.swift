@@ -5,6 +5,7 @@
 //  Created by Ricardo Desiderio on 20/03/21.
 //
 
+#if !os(macOS)
 import XCTest
 import SpriteKit
 @testable import GameUtils
@@ -104,3 +105,7 @@ class SKSheduleTimerTests: XCTestCase {
     }
 
 }
+
+
+#else
+#endif
