@@ -12,7 +12,7 @@ import AVFoundation
 public extension UIDevice {
 
     /// The height of the notch on bottom of iphone X or later, in CGFloat
-    public var notchBottomHeight: CGFloat {
+    var notchBottomHeight: CGFloat {
         if #available(iOS 11, *) {
             let bottomInset = UIApplication.shared.windows.first?.safeAreaInsets.bottom ?? 0
             return bottomInset
@@ -22,7 +22,7 @@ public extension UIDevice {
     }
 
     /// The height of the notch on top of iphone X or later, in CGFloat
-    public var notchTopHeight: CGFloat {
+    var notchTopHeight: CGFloat {
         if #available(iOS 11, *) {
             let bottomInset = UIApplication.shared.windows.first?.safeAreaInsets.top ?? 0
             return bottomInset
@@ -32,7 +32,7 @@ public extension UIDevice {
     }
 
     /// Vibrates with soft haptic vibration
-    public class func vibrateLite() {
+    class func vibrateLite() {
         if #available(iOS 10, *) {
             UIImpactFeedbackGenerator(style: .light).impactOccurred()
         } else {
@@ -41,7 +41,7 @@ public extension UIDevice {
     }
 
     /// Vibrates with hard haptic vibration
-    public class func vibrateHard() {
+    class func vibrateHard() {
         AudioServicesPlaySystemSound(SystemSoundID(1520))
     }
 
