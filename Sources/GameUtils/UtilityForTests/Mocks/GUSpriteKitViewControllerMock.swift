@@ -33,6 +33,14 @@ public class GUSpriteKitViewControllerMock: UIViewController {
         return storyboard.instantiateViewController(withIdentifier: identifier) as? GUSpriteKitViewControllerMock
     }
 
+    /// Adds a new `SKScene` on the test view of the controller
+    /// - Parameter scene: The scene desired to content the controller
+    public func addScene(scene: SKScene) {
+        if let view: SKView = view as? SKView {
+            view.presentScene(scene)
+        }
+    }
+
     // MARK: - PRIVATE METHODS
     /// Adds a game scene for test purpouses
     private func addScene() {
