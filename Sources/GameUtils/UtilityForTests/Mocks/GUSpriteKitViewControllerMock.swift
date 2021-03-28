@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  GUSpriteKiMockViewController.swift
 //  
 //
 //  Created by Ricardo Desiderio on 20/03/21.
@@ -9,28 +9,28 @@
 import UIKit
 import SpriteKit
 
-class SKSheduleTimerMockViewController: UIViewController {
+public class GUSpriteKitViewControllerMock: UIViewController {
 
     // MARK: - PROPERTIES
     /// The current scene of the view controller
-    var skScene: SKScene? {
+    public var skScene: SKScene? {
         guard let skView: SKView = view as? SKView else { return nil }
         return skView.scene
     }
 
     // MARK: - VIEW CYCLE LIFE
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         addScene()
     }
 
     // MARK: - EXPOSED METHODS
     /// Creates an instance of the view controller
-    static func instantiate() -> SKSheduleTimerMockViewController? {
-        let identifier: String = "SKSheduleTimerMockViewController"
+    public static func instantiate() -> GUSpriteKitViewControllerMock? {
+        let identifier: String = "GUSpriteKitViewControllerMock"
         let storyboard: UIStoryboard = UIStoryboard(name: identifier,
                                                     bundle: .module)
-        return storyboard.instantiateViewController(withIdentifier: identifier) as? SKSheduleTimerMockViewController
+        return storyboard.instantiateViewController(withIdentifier: identifier) as? GUSpriteKitViewControllerMock
     }
 
     // MARK: - PRIVATE METHODS

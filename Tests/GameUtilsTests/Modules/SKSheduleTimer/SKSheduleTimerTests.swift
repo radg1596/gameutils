@@ -19,7 +19,7 @@ class SKSheduleTimerTests: XCTestCase {
     // MARK: - PROPERTIES
     private var sut: SKSheduleTimer?
     private var sutDelegate: SKSheduleTimerDelegate?
-    private var mockView: SKSheduleTimerMockViewController?
+    private var mockView: GUSpriteKitViewControllerMock?
     private let timeOutForTests: TimeInterval = 10.0
 
     // MARK: - MOCK ACCESk
@@ -40,7 +40,7 @@ class SKSheduleTimerTests: XCTestCase {
         super.setUp()
         sut = SKSheduleTimer()
         sutDelegate = SKSheduleTimerDelegateMock()
-        mockView = SKSheduleTimerMockViewController.instantiate()
+        mockView = GUSpriteKitViewControllerMock.instantiate()
         sut?.delegate = sutDelegate
         sut?.targetScene = mockView?.skScene
     }
