@@ -7,7 +7,7 @@
 
 import XCTest
 
-extension XCTestCase {
+public extension XCTestCase {
 
     /// Excecutes an async test expectation. Creates an expectation and try to run the code
     /// - Parameters:
