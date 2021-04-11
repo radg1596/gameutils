@@ -16,13 +16,44 @@
                     <view key="view" contentMode="scaleToFill" id="jgp-G5-7Bx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usR-1f-buv">
+                                <rect key="frame" x="52" y="336" width="310.5" height="224"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Sprite Kit View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AH-fK-dwB">
+                                        <rect key="frame" x="10" y="10" width="290.5" height="72"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4AH-fK-dwB" firstAttribute="top" secondItem="usR-1f-buv" secondAttribute="top" constant="10" id="LE8-Lf-hxu"/>
+                                    <constraint firstAttribute="trailing" secondItem="4AH-fK-dwB" secondAttribute="trailing" constant="10" id="Yjr-Wo-4fy"/>
+                                    <constraint firstItem="4AH-fK-dwB" firstAttribute="leading" secondItem="usR-1f-buv" secondAttribute="leading" constant="10" id="pwV-Wu-uTB"/>
+                                </constraints>
+                            </view>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-Oz-3lC">
+                                <rect key="frame" x="197" y="509" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Kg-HQ-1Nh"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="usR-1f-buv" firstAttribute="height" secondItem="jgp-G5-7Bx" secondAttribute="height" multiplier="0.25" id="BNT-4R-Phv"/>
+                            <constraint firstItem="usR-1f-buv" firstAttribute="centerY" secondItem="jgp-G5-7Bx" secondAttribute="centerY" id="JBF-XN-w2p"/>
+                            <constraint firstItem="usR-1f-buv" firstAttribute="width" secondItem="jgp-G5-7Bx" secondAttribute="width" multiplier="0.75" id="Ziu-xC-wUd"/>
+                            <constraint firstItem="usR-1f-buv" firstAttribute="centerX" secondItem="jgp-G5-7Bx" secondAttribute="centerX" id="vmL-bQ-kvQ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="informationLabel" destination="4AH-fK-dwB" id="zb8-cd-NMl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGx-ld-omp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="259" y="92"/>
+            <point key="canvasLocation" x="257.97101449275362" y="91.741071428571431"/>
         </scene>
     </scenes>
     <resources>

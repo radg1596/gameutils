@@ -11,6 +11,9 @@ import SpriteKit
 
 public class GUSpriteKitViewControllerMock: UIViewController {
 
+    // MARK: - OUTLETS
+    @IBOutlet weak var informationLabel: UILabel!
+
     // MARK: - PROPERTIES
     /// The current scene of the view controller
     public var skScene: SKScene? {
@@ -37,6 +40,7 @@ public class GUSpriteKitViewControllerMock: UIViewController {
     /// - Parameter scene: The scene desired to content the controller
     public func addScene(scene: SKScene) {
         if let view: SKView = view as? SKView {
+            informationLabel.text = "Testing: \(scene.description)"
             view.presentScene(scene)
         }
     }
@@ -46,6 +50,7 @@ public class GUSpriteKitViewControllerMock: UIViewController {
     private func addScene() {
         if let view: SKView = view as? SKView {
             let skScene: SKScene = SKScene()
+            informationLabel.text = "Testing: \(skScene.description)"
             view.presentScene(skScene)
         }
     }
