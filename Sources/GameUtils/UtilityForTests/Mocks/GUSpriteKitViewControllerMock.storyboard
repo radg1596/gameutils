@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -14,14 +14,17 @@
             <objects>
                 <viewController restorationIdentifier="GUSpriteKitViewControllerMock" storyboardIdentifier="GUSpriteKitViewControllerMock" id="04T-Bk-x6y" customClass="GUSpriteKitViewControllerMock" customModule="GameUtils" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jgp-G5-7Bx" customClass="SKView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="usR-1f-buv">
-                                <rect key="frame" x="52" y="336" width="310.5" height="224"/>
+                                <rect key="frame" x="47" y="250" width="281" height="167"/>
                                 <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-Oz-3lC">
+                                        <rect key="frame" x="122" y="120" width="37" height="37"/>
+                                    </activityIndicatorView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Sprite Kit View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AH-fK-dwB">
-                                        <rect key="frame" x="10" y="10" width="290.5" height="30"/>
+                                        <rect key="frame" x="10" y="10" width="261" height="100"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -31,13 +34,12 @@
                                 <constraints>
                                     <constraint firstItem="4AH-fK-dwB" firstAttribute="top" secondItem="usR-1f-buv" secondAttribute="top" constant="10" id="LE8-Lf-hxu"/>
                                     <constraint firstAttribute="trailing" secondItem="4AH-fK-dwB" secondAttribute="trailing" constant="10" id="Yjr-Wo-4fy"/>
+                                    <constraint firstItem="1sd-Oz-3lC" firstAttribute="centerX" secondItem="usR-1f-buv" secondAttribute="centerX" id="gM1-Eq-RSb"/>
                                     <constraint firstItem="4AH-fK-dwB" firstAttribute="leading" secondItem="usR-1f-buv" secondAttribute="leading" constant="10" id="pwV-Wu-uTB"/>
+                                    <constraint firstItem="1sd-Oz-3lC" firstAttribute="top" secondItem="4AH-fK-dwB" secondAttribute="bottom" constant="10" id="r0q-Ug-PdN"/>
+                                    <constraint firstAttribute="bottom" secondItem="1sd-Oz-3lC" secondAttribute="bottom" constant="10" id="yDd-Xo-1Mz"/>
                                 </constraints>
                             </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-Oz-3lC">
-                                <rect key="frame" x="197" y="509" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5Kg-HQ-1Nh"/>
                         <constraints>
