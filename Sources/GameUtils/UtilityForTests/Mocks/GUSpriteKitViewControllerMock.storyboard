@@ -21,8 +21,8 @@
                                 <rect key="frame" x="52" y="336" width="310.5" height="224"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Testing Sprite Kit View" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AH-fK-dwB">
-                                        <rect key="frame" x="10" y="10" width="290.5" height="72"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <rect key="frame" x="10" y="10" width="290.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -34,7 +34,7 @@
                                     <constraint firstItem="4AH-fK-dwB" firstAttribute="leading" secondItem="usR-1f-buv" secondAttribute="leading" constant="10" id="pwV-Wu-uTB"/>
                                 </constraints>
                             </view>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-Oz-3lC">
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="1sd-Oz-3lC">
                                 <rect key="frame" x="197" y="509" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
@@ -49,6 +49,7 @@
                     </view>
                     <connections>
                         <outlet property="informationLabel" destination="4AH-fK-dwB" id="zb8-cd-NMl"/>
+                        <outlet property="informationView" destination="usR-1f-buv" id="RSv-4t-BUO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zGx-ld-omp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
